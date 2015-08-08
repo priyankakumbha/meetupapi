@@ -1,0 +1,103 @@
+
+body {
+    /* Typography Declarations */
+    color: #222222;
+    font-size: 1em;
+    font-family: "Open Sans", "Helvetica Neue", sans-serif;
+   text-align: center;
+}
+#container{
+	margin-top: 5px;
+}
+#heading{
+	background-color: #808080;
+		}
+
+#logo {
+	margin-top:5px;
+	background-position: center ;
+   background-repeat:no-repeat;
+    height: 6.938rem;
+    
+}
+h1{
+	margin-top:1rem;
+}
+h1 {
+
+	color:	#D8F3C9;
+	font-size: 20px;
+	font-family: "Gentium Book Basic", Georgia, serif;
+}
+.green-text{
+	text-transform: uppercase;
+	color:#FFE4B5;
+	font-size:20px;
+	font-family:"Open Sans", "Helvetica Neue", sans-serif;; 
+
+}
+
+#content{
+	height:15rem; 
+   
+    
+}
+#topicname, #cityname,#countryname,#button1{
+	margin: 0.7rem auto 0 auto;
+	height:2rem;
+	width:10.55rem;
+	background-color: lightblue;
+	border-radius: 2rem;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1rem;
+	display:inline-block;
+
+}
+
+
+/*#footer{
+	margin-top:15rem;
+	text-align: center;
+	background-color: #808080;
+	height:4rem;
+	
+}*/
+h3{
+	text-align: center;
+	color:#FFEFD5;
+}
+#button{
+/*margin: 2rem auto 0 auto;*/
+	height:2rem;
+	width:10.55rem;
+	background-color: #9CC089;
+	border-radius: 1.33rem;
+	text-align: center;
+	line-height: 1rem;
+	font-size: 1.5rem;
+	display:inline-block;	
+	  cursor: pointer;
+	  padding-top: 0.55rem;
+
+}
+#maparea {
+    width: 700px;
+    height: 300px;
+    border: 1px solid #c3c3c3;
+    margin: 1px auto 0 auto;
+	}
+	.error {
+	background-color: #F78181;
+	padding: 1em;
+}
+.hidden {
+	display: none;
+}
+.result {
+	border: 1px solid black;
+	padding: 5px;
+	margin: 0 auto 1em auto;
+}
+
+
