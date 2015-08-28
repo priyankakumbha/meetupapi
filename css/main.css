@@ -95,9 +95,15 @@ h3{
 	display: none;
 }
 .result {
+	width: 51%;
 	border: 1px solid black;
 	padding: 5px;
 	margin: 0 auto 1em auto;
+}
+.Event-description{
+	text-align: center;
+	 margin: 1px auto 0 auto;
+	 max-width: 100%;
 }
 
 

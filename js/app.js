@@ -20,10 +20,9 @@ for (var i=0; i < countriesJSON.length; i++) {
 }
  $("#countryList").html(countryList);
 
-
-
 	$('.meetupForm').submit( function(event){
 		// zero out results if previous search has run
+		$(".results" ).empty();
 		$('.maparea').html('');
 		// get the value of the tags the user submitted
 		var topic = $(this).find("input[name='topic']").val();
@@ -75,6 +74,15 @@ var showSearchResults = function(query, resultNum) {
 	return results;
 };
 
+var getMapCenter = function(result) {
+	for (i = 0; i < result.length; i++) { 
+        if (result[i].venue!= null) {
+        	return new google.maps.LatLng(result[i].venue.lat, result[i].venue.lon);
+	     }
+    }
+	return new google.maps.LatLng(-33.92, 151.25);
+};
+
 var getmeetupEvents = function(topic,city,country) {
 	
 	// the parameters we need to pass in our request to Meetup's API
@@ -110,11 +118,11 @@ var getmeetupEvents = function(topic,city,country) {
 		$('.search-results').append(errorElem);
 	});
 };
-	var populatedataongooglemap= function(result){
-		console.log(result[0]);
+	var populatedataongooglemap= function(result){	
+	var mapCenter = getMapCenter(result)	
     var map = new google.maps.Map(document.getElementById("maparea"), {
       zoom: 10,
-      center: new google.maps.LatLng(-33.92, 151.25),
+      center: mapCenter,
       mapTypeId: google.maps.MapTypeId.ROADMAP
     });
 
