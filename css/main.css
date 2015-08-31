@@ -7,14 +7,14 @@ body {
    text-align: center;
 }
 #container{
-	margin-top: 5px;
+	margin-top: 0.313em;
 }
 #heading{
 	background-color: #808080;
 		}
 
 #logo {
-	margin-top:5px;
+	margin-top:0.313em;
 	background-position: center ;
    background-repeat:no-repeat;
     height: 6.938rem;
@@ -26,13 +26,13 @@ h1{
 h1 {
 
 	color:	#D8F3C9;
-	font-size: 20px;
+	font-size:1.250em;
 	font-family: "Gentium Book Basic", Georgia, serif;
 }
 .green-text{
 	text-transform: uppercase;
 	color:#FFE4B5;
-	font-size:20px;
+	font-size:1.250em;
 	font-family:"Open Sans", "Helvetica Neue", sans-serif;; 
 
 }
@@ -82,10 +82,10 @@ h3{
 
 }
 #maparea {
-    width: 700px;
-    height: 300px;
-    border: 1px solid #c3c3c3;
-    margin: 1px auto 0 auto;
+    width: 43.750em;
+    height: 18.750em;
+    border: 0.063em solid #c3c3c3;
+    margin: 0.063em auto 0em auto;
 	}
 	.error {
 	background-color: #F78181;
@@ -96,14 +96,34 @@ h3{
 }
 .result {
 	width: 51%;
-	border: 1px solid black;
-	padding: 5px;
+	border: 0.063em solid black;
+	padding: 0.313em;
 	margin: 0 auto 1em auto;
 }
 .Event-description{
 	text-align: center;
-	 margin: 1px auto 0 auto;
+	 margin: 0.063em auto 0 auto;
 	 max-width: 100%;
 }
+
+@media only screen and (min-device-width: 375px), only screen and (max-device-width: 667px),  and (width : 667px) , and (height : 375px), only screen and (-webkit-min-device-pixel-ratio: 2) { 
+  #maparea {
+    width: 20.750em;
+    height: 5.750em;
+  } 
+}
+
+
+@media only screen and (min-width : 1224px) {
+	#maparea {
+    width: 43.750em;
+    height: 18.750em;
+    border: 0.063em solid #c3c3c3;
+    margin: 0.063em auto 0 auto;
+	}
+}
+
+
+
 
 

@@ -6,11 +6,12 @@ $(document).ready( function() {
         center: latlng,
         mapTypeId: google.maps.MapTypeId.ROADMAP
     };
+    resizeMap();
     var map = new google.maps.Map(document.getElementById("maparea"),
             myOptions);
 }
 google.maps.event.addDomListener(window, "load", initialize);
-
+google.maps.event.addDomListener(window, 'resize', initialize);
 	// Append countries list (from JSON) to the input datalist
 var countryList = {};
 var countryCode;
@@ -147,5 +148,14 @@ var getmeetupEvents = function(topic,city,country) {
       })(marker, i));
     }
     };
+};
+function resizeMap(){
+
+  var h = window.innerHeight;
+  var w = window.innerWidth;
+
+  $("#maparea").width(w/2);
+  $("#maparea").height(h-350);
+
 };
 
